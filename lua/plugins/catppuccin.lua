@@ -4,6 +4,7 @@ return {
     lazy = true,
     name = "catppuccin",
     opts = {
+      no_italic = true,
       lsp_styles = {
         underlines = {
           errors = { "undercurl" },
@@ -43,7 +44,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-mocha",
+      colorscheme = "catppuccin-macchiato",
     },
   },
 }
