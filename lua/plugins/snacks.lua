@@ -29,4 +29,14 @@ return {
       },
     },
   },
+  keys = {
+    -- disable the keymap to find files (Root dir)
+    { "<leader>ff", false },
+    -- change keymap to <space>sf (Root dir)
+    { "<leader>sf", LazyVim.pick("files"), desc = "Find Files (Root Dir)" },
+    -- disable the keymap to find files (cwd)
+    { "<leader>fF", false },
+    -- change keymap to <space>sf (cwd)
+    { "<leader>sF", LazyVim.pick("files", { root = false }), desc = "Find Files (cwd)" },
+  },
 }
